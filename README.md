@@ -8,6 +8,7 @@ REP is a prompt-driven workflow for extracting business rules, BDD scenarios, do
 2. **bdd.prompt** — Given-When-Then scenarios in business language
 3. **domain-rules.prompt** — Consolidated, deduplicated domain rules
 4. **unify-rules.prompt** — Final organized requirements with cross-domain connections
+5. **validation.prompt** — SME validation checklist and review report (Medium priority addition)
 
 All stages enforce:
 - Plain business English (no code/technical terms in outputs)
@@ -23,7 +24,7 @@ All stages enforce:
 # 2. Feed discovery.md into bdd.prompt
 # 3. Continue the chain...
 
-# Or use the orchestrator (future)
+# Or use the orchestrator
 ./scripts/run-rep.sh path/to/target.md
 ```
 
@@ -35,13 +36,14 @@ REP/
 │   ├── discovery.prompt
 │   ├── bdd.prompt
 │   ├── domain-rules.prompt
-│   └── unify-rules.prompt
+│   ├── unify-rules.prompt
+│   └── validation.prompt   # NEW: SME review & validation stage
 ├── README.md
 ├── BACKLOG.md
-├── scripts/              # Orchestration helpers (WIP)
+├── scripts/              # Orchestration helpers
 ├── output/
 │   ├── v1/
-│   └── v2/               # Versioned extraction results
+│   └── v2/               # Versioned extraction results + manifest.json
 ├── eshoponweb/           # Target codebase (submodule)
 └── .gitmodules
 ```

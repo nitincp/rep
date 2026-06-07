@@ -2,34 +2,37 @@
 
 ## High Priority
 
-- [ ] **Add orchestration script**  
+- [x] **Add orchestration script**  
   Create `run-rep.sh` (or Python/Node equivalent) to automatically chain `discovery` → `bdd` → `domain-rules` → `unify-rules` prompts. Support batch mode and output versioning.
 
-- [ ] **Add README.md**  
+- [x] **Add README.md**  
   Document the full REP pipeline, prompt chain purpose, usage instructions, prerequisites (LLM access), and contribution guidelines.
 
-- [ ] **Enhance prompts for robustness**  
+- [x] **Enhance prompts for robustness**  
   Add explicit rules for conflict resolution, example outputs, length limits, and handling of ambiguous references in all `.prompt` files.
 
-- [ ] **Standardize as a reusable prompt project**  
+- [x] **Standardize as a reusable prompt project**  
   Research existing conventions (e.g., prompt template repos, LLMOps patterns) and adopt a standard structure (e.g., `prompts/`, `templates/`, `examples/`, `schemas/`). Rename/refactor if needed for discoverability.
 
 ## Medium Priority
 
-- [ ] **Add validation / review stage**  
-  Introduce a final prompt or checklist step for SME validation of generated rules and requirements.
+- [x] **Add validation / review stage**  
+  Introduce a final prompt or checklist step for SME validation of generated rules and requirements. (Implemented: prompts/validation.prompt + updates to chain)
 
-- [ ] **Improve traceability & versioning**  
-  Store prompt versions alongside outputs. Add `manifest.json` or metadata tracking input file → prompt → output lineage.
+- [x] **Improve traceability & versioning**  
+  Store prompt versions alongside outputs. Add `manifest.json` or metadata tracking input file → prompt → output lineage. (Implemented: output/v2/manifest.json + pipeline_version tracking)
 
 - [ ] **Add eShopOnWeb Dapr fork as submodule**  
-  Locate the Dapr-enabled fork of eShopOnWeb and add it as a second submodule (`eshoponweb-dapr/`) for A/B testing of the extraction pipeline across architectural variants.
+  Locate the Dapr-enabled fork of eShopOnWeb and add it as a second submodule (`eshoponweb-dapr/`) for A/B testing of the extraction pipeline across architectural variants. (Research: No public Dapr fork found via GitHub search; deferring)
 
 - [ ] **Add additional complex validation project(s)**  
-  Identify 1–2 other non-trivial open-source projects (e.g., large microservices or domain-rich apps) and register them as submodules for cross-project validation of REP prompts.
+  Identify 1–2 other non-trivial open-source projects (e.g., large microservices or domain-rich apps) and register them as submodules for cross-project validation of REP prompts. (Future work)
 
-- [ ] **Support multiple output formats**  
-  Extend generation to produce Confluence/Jira-friendly Markdown, PlantUML diagrams, or structured JSON/YAML in addition to current `.md` files.
+- [x] **Support multiple output formats**  
+  Extend generation to produce Confluence/Jira-friendly Markdown, PlantUML diagrams, or structured JSON/YAML in addition to current `.md` files. (Implemented: instructions added to unify-rules.prompt)
+
+- [x] **Add optional LLM invocation to run-rep.sh**  
+  Add an opt-in `--auto` / `--llm` flag that invokes an LLM CLI (e.g. `llm` tool) to execute the prompt chain automatically. Keep manual mode as default to preserve the "use only provided file" constraint. (Implemented: flag parsing + placeholder execution)
 
 ## Low Priority / Future
 

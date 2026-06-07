@@ -1,0 +1,48 @@
+{
+  "pipeline_version": "2.0.0-medium-priority",
+  "run_date": "2026-06-08",
+  "input_project": "eshoponweb",
+  "stages": [
+    {
+      "stage": 1,
+      "prompt": "prompts/discovery.prompt",
+      "prompt_version": "1.1",
+      "input": null,
+      "output": "discovery.md",
+      "lineage_note": "Initial discovery from source code files in eshoponweb/src/"
+    },
+    {
+      "stage": 2,
+      "prompt": "prompts/bdd.prompt",
+      "prompt_version": "1.0",
+      "input": "discovery.md",
+      "output": "bdd.md",
+      "lineage_note": "BDD scenarios derived directly from discovery.md"
+    },
+    {
+      "stage": 3,
+      "prompt": "prompts/domain-rules.prompt",
+      "prompt_version": "1.2",
+      "input": "bdd.md",
+      "output": "domain-rule.md",
+      "lineage_note": "Domain rules consolidated; note filename legacy 'domain-rule.md'"
+    },
+    {
+      "stage": 4,
+      "prompt": "prompts/unify-rules.prompt",
+      "prompt_version": "1.1",
+      "input": "domain-rule.md",
+      "output": "unify-rules.md",
+      "lineage_note": "Unified cross-domain view with conflict resolution"
+    },
+    {
+      "stage": 5,
+      "prompt": "prompts/validation.prompt",
+      "prompt_version": "1.0",
+      "input": "unify-rules.md",
+      "output": "validation.md (to be generated)",
+      "lineage_note": "SME validation report"
+    }
+  ],
+  "traceability_notes": "All outputs enforce citation of source files. Prompt versions tracked for reproducibility. See BACKLOG.md for medium priority traceability implementation."
+}

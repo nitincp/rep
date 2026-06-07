@@ -7,3 +7,12 @@ Remove duplicates, resolve conflicts, find connections between scenarios, and or
 - Ensure every final requirement traces back to at least one cited reference.
 
 cite references
+
+**Multiple Output Formats Support (Medium Priority):**
+By default, produce standard Markdown. Additionally, support:
+- Confluence/Jira-friendly Markdown (use appropriate headings, no complex tables if not supported)
+- Structured JSON (array of rules with id, domain, statement, gwt, citations[])
+- YAML equivalent
+- Optional: PlantUML component or mindmap for high-level overview (if requested in input)
+
+When user specifies format (e.g. via additional instruction), adapt output accordingly while preserving content fidelity and traceability.
