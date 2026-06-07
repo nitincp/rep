@@ -1,0 +1,13 @@
+Analyze the codebase and create a high-level **Business Discovery Document** in plain English.
+
+Focus only on the core business capabilities. Ignore all technical implementation details.
+
+Group by major business domains (e.g., Catalog, Shopping Basket, Ordering, etc.) and describe:
+- What the domain does from a business user's perspective
+- Key capabilities and behaviors
+
+Under each domain section, include a "References" subsection citing the specific source files and functions (e.g., `CatalogItem.cs` (UpdateDetails, UpdateBrand)).
+
+Use simple, natural language suitable for non-technical stakeholders.
+
+cite references at code level. File, Function and include them in docs

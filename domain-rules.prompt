@@ -1,0 +1,12 @@
+Take the extracted business rules and create a clean **Domain Rules Document**.
+
+**Instructions:**
+- Consolidate and remove duplicates.
+- Organize by major business domains.
+- Use simple plain English.
+- Keep Given-When-Then format for clarity.
+- Make it suitable for business stakeholders and SMEs to review and validate.
+
+Output a well-structured, professional document.
+
+cite references

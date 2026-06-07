@@ -1,0 +1,11 @@
+Analyze the codebase and extract all important business rules and behaviors.
+
+**Strict Requirements:**
+- Use only plain business English — no technical terms, class names, function names, or code references.
+- Present everything in clear **Given-When-Then** format.
+- Make each scenario concise and readable.
+- Group by business domain/feature.
+
+Output only clean business-level scenarios that a domain expert can validate.
+
+cite references
