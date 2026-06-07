@@ -1,4 +1,9 @@
-Analyze the codebase and extract all important business rules and behaviors.
+Analyze the provided document and extract all important business rules and behaviors.
+
+**Robustness Rules:**
+- If duplicates or near-duplicates exist, consolidate into a single canonical scenario.
+- Resolve conflicts by selecting the most stakeholder-relevant interpretation and noting it.
+- Never invent scenarios not supported by the input document.
 
 **Strict Requirements:**
 - Use only plain business English — no technical terms, class names, function names, or code references.
