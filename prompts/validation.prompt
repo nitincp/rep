@@ -7,6 +7,7 @@ You are an expert business analyst and domain expert. Review the final unified r
 - Check for completeness against the original discovery.md — flag any missing critical business flows.
 - Identify ambiguities, overly vague statements, or items needing SME clarification.
 - Validate cross-domain connections for accuracy.
+- **Edge Cases:** Flag duplicate rules, missing citations, or unresolved conflicts from prior stages. Note any references that cannot be verified from provided files only.
 - Assess prioritization and dependencies (e.g., must-have vs nice-to-have).
 - Suggest improvements for readability or structure if needed.
 

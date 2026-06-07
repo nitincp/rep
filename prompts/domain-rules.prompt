@@ -4,10 +4,11 @@ Take the extracted business rules and create a clean **Domain Rules Document**.
 - Explicitly detect and merge duplicate or overlapping rules.
 - When conflicts exist, document the resolution rationale.
 - Flag any rules that lack sufficient supporting references.
+- **Error/Edge Handling:** If references are missing/ambiguous, note "Insufficient citation - requires source verification". Detect and list duplicates explicitly before merging. For unresolved conflicts, propose resolution options with rationale. Do not invent references or rules.
 
 **Instructions:**
 - Consolidate and remove duplicates.
-- Organize by major business domains.
+- Organize by major business domains (explicitly cover supporting domains such as inventory, shipping, payments, etc. if present in inputs).
 - Use simple plain English.
 - Keep Given-When-Then format for clarity.
 - Make it suitable for business stakeholders and SMEs to review and validate.

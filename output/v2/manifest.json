@@ -24,14 +24,14 @@
       "prompt": "prompts/domain-rules.prompt",
       "prompt_version": "1.2",
       "input": "bdd.md",
-      "output": "domain-rule.md",
-      "lineage_note": "Domain rules consolidated; note filename legacy 'domain-rule.md'"
+      "output": "domain-rules.md",
+      "lineage_note": "Domain rules consolidated (naming aligned to domain-rules.md)"
     },
     {
       "stage": 4,
       "prompt": "prompts/unify-rules.prompt",
       "prompt_version": "1.1",
-      "input": "domain-rule.md",
+      "input": "domain-rules.md",
       "output": "unify-rules.md",
       "lineage_note": "Unified cross-domain view with conflict resolution"
     },

@@ -4,10 +4,11 @@ Analyze the codebase and create a high-level **Business Discovery Document** in 
 - Resolve any conflicting behaviors by choosing the most business-critical interpretation and noting the conflict.
 - If information is missing or ambiguous, explicitly state assumptions.
 - Never invent capabilities not supported by the provided references.
+- Explicitly scan for and include sections on any supporting domains (inventory, shipping, payments, etc.) present in the codebase even if coverage is partial.
 
 Focus only on the core business capabilities. Ignore all technical implementation details.
 
-Group by major business domains (e.g., Catalog, Shopping Basket, Ordering, etc.) and describe:
+Group by major business domains (e.g., Catalog, Shopping Basket, Ordering, and supporting domains such as inventory, shipping, payments when present) and describe:
 - What the domain does from a business user's perspective
 - Key capabilities and behaviors
 

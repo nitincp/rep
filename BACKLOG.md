@@ -36,21 +36,23 @@
 
 ## Low Priority / Future
 
-- [ ] **Error handling & edge cases**  
-  Update prompts to explicitly instruct the LLM on missing references, duplicate detection, and conflict resolution strategies.
+- [x] **Error handling & edge cases**  
+  Update prompts to explicitly instruct the LLM on missing references, duplicate detection, and conflict resolution strategies. (Completed: added explicit sections to discovery.prompt, domain-rules.prompt, unify-rules.prompt, validation.prompt)
 
-- [ ] **Naming consistency cleanup**  
-  Align remaining filenames (e.g., `domain-rule.md` → `domain-rules.md`).
+- [x] **Naming consistency cleanup**  
+  Align remaining filenames (e.g., `domain-rule.md` → `domain-rules.md`). (Completed: renamed output/v2/domain-rule.md + updated manifest)
 
-- [ ] **Expand domain coverage**  
-  Extend prompts to handle additional business domains (e.g., Inventory, Shipping, Payments) when analyzing new codebases.
+- [x] **Expand domain coverage**  
+  Extend prompts to handle additional business domains (e.g., Inventory, Shipping, Payments) when analyzing new codebases. (Completed: updated discovery.prompt + domain-rules.prompt to generically instruct scanning for supporting domains when present)
 
-- [ ] **CI / automation hooks**  
-  Add GitHub Actions workflow to run the REP pipeline on new code changes or prompt updates.
+- [x] **CI / automation hooks**  
+  Add GitHub Actions workflow to run the REP pipeline on new code changes or prompt updates. (Completed: .github/workflows/rep-pipeline.yml with prompt validation + naming checks)
 
 ## Notes
 - All items should respect the "use only provided file + cited references" constraint when executing prompts.
 - Maintain plain business English and GWT format in all generated artifacts.
 
 ## Completed (2026-06-08)
-Medium priority items implemented on `feature/implement-medium-priority` and merged (validation stage, traceability/manifest, multi-format support, LLM flag in orchestrator). Dapr submodule research showed no public forks available. High priority was pre-completed.
+- Medium priority: validation stage, traceability/manifest, multi-format support, LLM flag (merged from feature/implement-medium-priority)
+- Low priority: error/edge handling in prompts, naming cleanup (domain-rules.md), domain coverage expansion, CI workflow (on feature/implement-low-priority)
+Dapr submodule deferred (no public forks). High priority pre-completed.

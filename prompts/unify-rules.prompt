@@ -5,6 +5,7 @@ Remove duplicates, resolve conflicts, find connections between scenarios, and or
 - Explicitly call out cross-domain dependencies and connections.
 - Resolve any remaining conflicts with a clear rationale.
 - Ensure every final requirement traces back to at least one cited reference.
+- **Error/Edge Handling:** On missing/ambiguous references, explicitly flag "Insufficient source citation". Detect duplicates across inputs and resolve by keeping strongest citation. For conflict resolution, always provide rationale; if unresolvable, list as open issue. Never fabricate data or references.
 
 cite references
 

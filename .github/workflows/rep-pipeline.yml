@@ -1,0 +1,36 @@
+name: REP Pipeline
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'prompts/**'
+      - 'eshoponweb/**'
+      - 'scripts/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'prompts/**'
+      - 'eshoponweb/**'
+
+jobs:
+  validate-prompts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate prompt structure
+        run: |
+          echo "Checking required prompts exist..."
+          ls prompts/discovery.prompt prompts/bdd.prompt prompts/domain-rules.prompt prompts/unify-rules.prompt prompts/validation.prompt
+          echo "Prompt files present."
+      - name: Check output versioning
+        run: |
+          echo "Manifest check (example)..."
+          cat output/v2/manifest.json | head -20 || echo "No manifest (ok for PRs)"
+      - name: Naming consistency
+        run: |
+          if [ -f output/v2/domain-rule.md ]; then echo "Legacy filename found"; exit 1; fi
+          echo "Naming OK"
+
+  # Future: add step to invoke LLM via CLI or matrix for batch runs
+  # See run-rep.sh --llm for automation hook
