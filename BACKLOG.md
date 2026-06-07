@@ -55,4 +55,4 @@
 ## Completed (2026-06-08)
 - Medium priority: validation stage, traceability/manifest, multi-format support, LLM flag (merged from feature/implement-medium-priority)
 - Low priority: error/edge handling in prompts, naming cleanup (domain-rules.md), domain coverage expansion, CI workflow (on feature/implement-low-priority)
-Dapr submodule deferred (no public forks). High priority pre-completed.
+Dapr submodule deferred (no public forks). High priority pre-completed. Note: Placeholder outputs removed as they do not produce real LLM content.

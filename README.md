@@ -43,7 +43,7 @@ REP/
 ├── scripts/              # Orchestration helpers
 ├── output/
 │   ├── v1/
-│   └── v2/               # Versioned extraction results + manifest.json
+│   └── v2/               # Versioned extraction results + manifest.json (prompt enhancements captured in v2 lineage)
 ├── eshoponweb/           # Target codebase (submodule)
 └── .gitmodules
 ```

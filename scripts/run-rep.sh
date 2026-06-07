@@ -47,4 +47,4 @@ echo "  4. prompts/unify-rules.prompt → unify-rules.md  (input: domain-rules.m
 echo "  5. prompts/validation.prompt  → validation.md   (input: unify-rules.md)  [NEW: SME Review Stage]"
 echo ""
 echo "Note: Manual mode is default. Use --llm flag for experimental auto-invocation."
-echo "Medium priority items implemented: validation stage + traceability + multi-format + LLM flag."
+echo "All backlog items implemented (high/medium/low priority)."
