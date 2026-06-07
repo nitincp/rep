@@ -31,7 +31,11 @@ All stages enforce:
 
 ```
 REP/
-├── *.prompt              # The four core prompts
+├── prompts/              # Core prompt files (.prompt)
+│   ├── discovery.prompt
+│   ├── bdd.prompt
+│   ├── domain-rules.prompt
+│   └── unify-rules.prompt
 ├── README.md
 ├── BACKLOG.md
 ├── scripts/              # Orchestration helpers (WIP)

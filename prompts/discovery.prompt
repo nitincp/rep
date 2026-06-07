@@ -1,5 +1,10 @@
 Analyze the codebase and create a high-level **Business Discovery Document** in plain English.
 
+**Robustness Rules:**
+- Resolve any conflicting behaviors by choosing the most business-critical interpretation and noting the conflict.
+- If information is missing or ambiguous, explicitly state assumptions.
+- Never invent capabilities not supported by the provided references.
+
 Focus only on the core business capabilities. Ignore all technical implementation details.
 
 Group by major business domains (e.g., Catalog, Shopping Basket, Ordering, etc.) and describe:
