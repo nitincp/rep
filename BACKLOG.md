@@ -51,3 +51,6 @@
 ## Notes
 - All items should respect the "use only provided file + cited references" constraint when executing prompts.
 - Maintain plain business English and GWT format in all generated artifacts.
+
+## Completed (2026-06-08)
+Medium priority items implemented on `feature/implement-medium-priority` and merged (validation stage, traceability/manifest, multi-format support, LLM flag in orchestrator). Dapr submodule research showed no public forks available. High priority was pre-completed.
