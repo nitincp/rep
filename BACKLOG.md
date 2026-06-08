@@ -28,6 +28,15 @@
 - [ ] **Add additional complex validation project(s)**  
   Identify 1–2 other non-trivial open-source projects (e.g., large microservices or domain-rich apps) and register them as submodules for cross-project validation of REP prompts. (Future work)
 
+- [ ] **Configure grok pattern support**  
+  Add support for Grok-style parsing or pattern matching in prompt input/output validation and metadata extraction.
+
+- [ ] **Add new sample project submodules**  
+  Find and register one sample project each for Python, TypeScript, and React as submodules to validate prompts across implementation styles.
+
+- [ ] **Add automated prompt output testing**  
+  Implement test harnesses or validation checks to verify prompt outputs, formatting, and traceability across pipeline stages.
+
 - [x] **Support multiple output formats**  
   Extend generation to produce Confluence/Jira-friendly Markdown, PlantUML diagrams, or structured JSON/YAML in addition to current `.md` files. (Implemented: instructions added to unify-rules.prompt)
 
